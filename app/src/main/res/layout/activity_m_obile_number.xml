@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_design"
+        tools:context=".MobileNumber">
+
+       <com.google.android.material.card.MaterialCardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:orientation="vertical">
+               <androidx.appcompat.widget.AppCompatEditText
+                   android:id="@+id/editET"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                   android:hint="Mobile Number"
+                   android:textSize="20sp"
+                   android:layout_margin="10dp"/>
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/sendOTP"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                   android:layout_marginTop="10dp"
+                   android:textAllCaps="false"
+                   android:text="Send OTP"/>
+           </LinearLayout>
+       </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+</layout>
